@@ -4,9 +4,15 @@ services:
     image: ui-service
     build: ./ui
     ports:
-    - "4000:4000"
+      - "4000:4000"
+    volumes:
+      - ./ui:/code
+    depends_on: 
+      - api
   api:
     image: api-service
     build: ./backend
     ports:
     - "3000:3000"
+    volumes:
+      - ./backend:/code
