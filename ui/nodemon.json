@@ -1,0 +1,8 @@
+{
+    "ignore": [
+        "public/",
+        "node_modules/",
+        "src"
+    ],
+    "ext": "js json"
+}
