@@ -1,6 +1,7 @@
 version: '3'
 services:
   ui:
+    container_name: "ui-service"
     image: ui-service
     build: ./ui
     ports:
@@ -10,6 +11,7 @@ services:
     depends_on: 
       - api
   api:
+    container_name: "api-service"
     image: api-service
     build: ./backend
     ports:
